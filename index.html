@@ -66,10 +66,10 @@
       window.setCurrentTime = (time) => {
         return new Promise((resolve) => {
           player.currentTime = time
-          player.once('seeked', () => {
-            console.log(`Đã tua tới ${time} giây OK`);
+          // player.once('seeked', () => {
+            // console.log(`Đã tua tới ${time} giây OK`);
             resolve(true);
-          });
+          // });
         })
       }
     </script>
