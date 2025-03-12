@@ -36,11 +36,7 @@
     </style>
   </head>
   <body>
-    <div
-      id="player"
-      data-plyr-provider="youtube"
-      data-plyr-embed-id=""
-    ></div>
+    <div id="player" data-plyr-provider="youtube" data-plyr-embed-id=""></div>
 
     <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
     <script>
@@ -66,10 +62,7 @@
       window.setCurrentTime = (time) => {
         return new Promise((resolve) => {
           player.currentTime = time
-          // player.once('seeked', () => {
-            // console.log(`Đã tua tới ${time} giây OK`);
-            resolve(true);
-          // });
+          resolve(true)
         })
       }
     </script>
