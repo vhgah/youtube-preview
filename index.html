@@ -65,6 +65,13 @@
           resolve(true)
         })
       }
+
+      window.playVideo = () => {
+        return new Promise((resolve) => {
+          player.play()
+          resolve(true)
+        })
+      }
     </script>
   </body>
 </html>
